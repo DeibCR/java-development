@@ -1,4 +1,4 @@
-package com.pluralsight;
+package com.pluralsight.shoppinglist;
 
 public class ShoppingList {
 
@@ -6,7 +6,7 @@ public class ShoppingList {
         //// Create an array with 10 shopping items
         String[] shoppingItems ={
            "Chair","Desktop screen", "Mouse XP3", "Headset", "Portable Hard drive",
-           "CPU","Speakers", "Notepad", "Screen","USB external port"
+           "CPU","Speakers", "Notepad", "Portable Screen","USB external port"
         };
 
         //Print the shopping list
