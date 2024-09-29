@@ -23,16 +23,33 @@ package com.pluralsight.donut;
  */
 
 
+import java.util.Scanner;
+
 public class Donut {
     static double price = .25;
 
-    static double getTotal(int numberOfDonuts) {
+    static double getTotalPrice(int numberOfDonuts) {
         return price * numberOfDonuts;
     }
 
     public static void main(String[] args) {
-        System.out.println("A dozen donuts cost:");
-        System.out.println(getTotal(12) + " dollars");
+
+        Scanner inputScanner = new Scanner(System.in);
+
+
+        System.out.println("Welcome!, How many donuts do you want?: ");
+        int numberOfDonuts = inputScanner.nextInt();
+        inputScanner.nextLine();
+
+        System.out.println("Your donuts cost:");
+
+        double totalPrice= getTotalPrice(numberOfDonuts);
+
+        System.out.println(totalPrice + " dollars");
+
+        System.out.printf("In dollars, that would be $%4.2f\n", totalPrice);
+
+        System.out.printf("The square root of 5 is %8.15f\n", Math.sqrt(5.0));
     }
 
 
