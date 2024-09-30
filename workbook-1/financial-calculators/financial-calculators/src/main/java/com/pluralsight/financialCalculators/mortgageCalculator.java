@@ -13,7 +13,7 @@ public class mortgageCalculator {
 
 
         //Input the principal
-        System.out.println("Enter your Home Price: ");
+        System.out.println("Welcome to the Mortgage Calculator, please enter your the amount of your loan: ");
         double principal = mortgageScanner.nextDouble();
         mortgageScanner.nextLine();
 
@@ -35,8 +35,14 @@ public class mortgageCalculator {
         double mortgage = (principal * interestRate * Math.pow(aRate, loanTermPyear)) / (Math.pow(aRate, loanTermPyear) - 1);
         String mortgageFinal = NumberFormat.getCurrencyInstance().format(mortgage);
 
+        //Total payment over loan term
+        double totalPayment= mortgage*loanTermPyear;
+
+        double totalInterestPaid= totalPayment-principal;
+
         //Print the mortgage
         System.out.println("Mortgage = " + mortgageFinal);
+        System.out.println("Total interest pay = " + totalInterestPaid);
 
 
     }

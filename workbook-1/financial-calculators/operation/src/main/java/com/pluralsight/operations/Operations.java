@@ -30,5 +30,6 @@ public class Operations {
         //Print the result
         System.out.println("The result of your operation is: " + result);
 
+
     }
 }
