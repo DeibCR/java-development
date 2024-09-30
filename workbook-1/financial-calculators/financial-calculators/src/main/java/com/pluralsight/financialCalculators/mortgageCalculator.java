@@ -8,7 +8,7 @@ public class mortgageCalculator {
     public static void main(String[] args) {
 
 
-        double totalInterest;
+
 
         Scanner calculatorScanner = new Scanner(System.in);
 
