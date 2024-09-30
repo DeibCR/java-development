@@ -34,9 +34,10 @@ public class Donut {
 
     public static void main(String[] args) {
 
+        //Get a scanner to read input from System.in
         Scanner inputScanner = new Scanner(System.in);
 
-
+        // Read the input number
         System.out.println("Welcome!, How many donuts do you want?: ");
         int numberOfDonuts = inputScanner.nextInt();
         inputScanner.nextLine();
