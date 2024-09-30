@@ -2,6 +2,9 @@ package com.pluralsight.donut;
 
 
 // We LOVE our delimiters!!!!
+//We LIKE indentation
+//We like our Operators
+//We use upper and lower case bc we should
 
 /*
 
@@ -17,6 +20,9 @@ package com.pluralsight.donut;
     Template parameter list
 *() parentheses:
     Parameter list for method
+"" Double quotes
+'' Single quotes
+
 *;  semicolon:
     Ends of statements
 =: assignment operator
@@ -28,7 +34,7 @@ import java.util.Scanner;
 public class Donut {
     static double price = .25;
 
-    static double getTotalPrice(int numberOfDonuts) {
+   public static double getTotalPrice(int numberOfDonuts) {
         return price * numberOfDonuts;
     }
 
