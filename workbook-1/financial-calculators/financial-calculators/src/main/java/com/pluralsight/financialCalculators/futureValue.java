@@ -1,5 +1,6 @@
 package com.pluralsight.financialCalculators;
 
+import java.text.NumberFormat;
 import java.util.Scanner;
 
 public class futureValue {
@@ -30,14 +31,16 @@ public class futureValue {
 
         //Calculate the future value
         double futureValue = principal * Math.pow(1 + dailyInterestRate, daysCompounding);
+        String futureValueFinal = NumberFormat.getCurrencyInstance().format(futureValue);
 
         //Calculate the total interest earned
         double totalInterest = futureValue - principal;
+        String totalInterestFinal = NumberFormat.getCurrencyInstance().format(totalInterest);
 
         //Display
-        System.out.printf("The future value after %d years is: $%.2f%n", years, futureValue);
+        System.out.println("The future value  is: "+ futureValueFinal);
 
-        System.out.printf("Total Interest earned: $%.2f%n", totalInterest);
+        System.out.println("Total Interest earned: " + totalInterestFinal);
 
 
     }
