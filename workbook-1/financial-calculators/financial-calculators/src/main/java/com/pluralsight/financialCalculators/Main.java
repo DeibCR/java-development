@@ -9,15 +9,15 @@ public class Main {
         Scanner principalScanner = new Scanner(System.in);
 
         //Ask the user which calculator want to use
-        System.out.println("*** Welcome to the Financial Calculator Menu ***");
-        System.out.println(" 1. Mortgage Calculator");
-        System.out.println(" 2. Future Value Calculator");
-        System.out.println(" 3. Annuity Calculator");
-        System.out.println(" Please select the Calculator you want to use: (1, 2, or 3)" +
-                " ");
+        System.out.println("*** Welcome to the Financial Calculator Menu ***\n"
+                                    +"\n 1. Mortgage Calculator"
+                                    +"\n 2. Future Value Calculator"
+                                    +"\n 3. Annuity Calculator"
+                                    +"\n Please select the Calculator you want to use: (1, 2, or 3)"  );
+
         int option = principalScanner.nextInt();
 
-        //Decide which calculator use in base of user choice and call  a message method and the calculate method
+        //Switch loop that decide which calculator use in base of user choice and iniciate that calculator class, call  a message method and the calculate method
         switch (option) {
             case 1:
                 mortgageCalculator class1 = new mortgageCalculator();
