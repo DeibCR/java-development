@@ -9,7 +9,7 @@ public class Main {
         Scanner principalScanner = new Scanner(System.in);
 
         //Ask the user which calculator want to use
-        System.out.println("Welcome to the Financial Calculator Menu");
+        System.out.println("*** Welcome to the Financial Calculator Menu ***");
         System.out.println(" 1. Mortgage Calculator");
         System.out.println(" 2. Future Value Calculator");
         System.out.println(" 3. Annuity Calculator");
@@ -21,8 +21,8 @@ public class Main {
         switch (option) {
             case 1:
                 mortgageCalculator class1 = new mortgageCalculator();
-                class1.showMessage();
-                class1.mortgageCalc();
+                class1.showMessage(); //confirmation of what calculator you chose
+                class1.mortgageCalc(); //Call of the method that  makes the calculation
                 break;
 
             case 2:
@@ -42,6 +42,7 @@ public class Main {
                 System.out.println("Invalid choice! Please enter 1,2 or 3.");
                 break;
         }
+
         //close the scanner
         principalScanner.close();
 
