@@ -4,7 +4,14 @@ import java.text.NumberFormat;
 import java.util.Scanner;
 
 public class annuity {
-    public static void main(String[] args) {
+
+    public void showMessage() {
+        System.out.println("You have selected The Annuity");
+    }
+
+    public void calcAnnuity() {
+
+
         Scanner ScannerAnnuity = new Scanner(System.in);
 
         // Get user input for monthly payout, interest rate, and number of years to pay

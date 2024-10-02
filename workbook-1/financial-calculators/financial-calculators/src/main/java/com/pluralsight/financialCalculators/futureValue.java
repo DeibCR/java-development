@@ -5,7 +5,15 @@ import java.util.Scanner;
 
 public class futureValue {
 
-    public static void main(String[] args) {
+    public void showMessage() {
+        System.out.println("You have selected The Annuity");
+    }
+
+    public void calcuFutureValue (){
+
+
+
+
         Scanner CDScanner = new Scanner(System.in);
 
         //Daily Compounding
