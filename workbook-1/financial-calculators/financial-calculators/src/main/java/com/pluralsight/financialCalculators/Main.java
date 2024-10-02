@@ -13,7 +13,8 @@ public class Main {
         System.out.println(" 1. Mortgage Calculator");
         System.out.println(" 2. Future Value Calculator");
         System.out.println(" 3. Annuity Calculator");
-        System.out.println(" Enter your choice (1,2, or 3): ");
+        System.out.println(" Please select the Calculator you want to use: (1, 2, or 3)" +
+                " ");
         int option = principalScanner.nextInt();
 
         //Decide which calculator use in base of user choice and call  a message method and the calculate method

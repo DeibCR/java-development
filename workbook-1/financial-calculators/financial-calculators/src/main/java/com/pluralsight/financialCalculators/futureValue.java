@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class futureValue {
 
     public void showMessage() {
-        System.out.println("You have selected The Annuity");
+        System.out.println("You have selected The Future Value Calculator ");
     }
 
     public void calcuFutureValue (){
@@ -21,7 +21,7 @@ public class futureValue {
 
         //Inputs the Initial Deposit amount, Annual Interest Rate and the number of years
 
-        System.out.println("Enter the initial deposit amount: ");
+        System.out.println("Welcome, please enter the initial deposit amount: ");
         double principal = CDScanner.nextDouble();
         CDScanner.nextLine();
 
